@@ -1,4 +1,39 @@
-body {
-  background-color: green;
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: PlayBold;
+  src: url(fonts/Play-Bold.ttf);
+}
+
+button {
+  margin: 0;
+  width: 160px;
+  height: 56px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: PlayBold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #77B900;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #000000;
+  border: 1px solid #77B900;
+  -webkit-box-shadow: inset 0px 0px 0px 0px green, 0px 0px 5px 2px #77B900;
+          box-shadow: inset 0px 0px 0px 0px green, 0px 0px 5px 2px #77B900;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.buttons {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

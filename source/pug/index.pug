@@ -1,12 +1,7 @@
-extends templates/main
-
-block title
-	| Template
-
-block main
-
-	main(role='main')
-		include blocks/pages/home/intro
-
-block modal
-	include modal/hello
+include ./utils/buttons
+doctype html 
+html 
+	include ./includes/head
+	body 
+		+button 
+		script(scr="main.js")
