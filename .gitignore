@@ -1,11 +1,3 @@
-## Packages
-#-------------------------
-node_modules
-
-## Compilations
-#-------------------------
-dist
-
 ## Trash
 #-------------------------
 desktop.ini
