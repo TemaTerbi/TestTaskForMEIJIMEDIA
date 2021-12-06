@@ -13,7 +13,7 @@ module.exports = {
 
   pug: {
     src: pathSrc + "/pug/*.pug",
-    watch: pathSrc + "/pug/*.pug",
+    watch: pathSrc + "/pug/**/*.pug",
     dest: pathDest
   },
 
@@ -31,13 +31,13 @@ module.exports = {
 
   js: {
     src: pathSrc + "/js/*.js",
-    watch: pathSrc + "/js/*.js",
+    watch: pathSrc + "/js/**/*.js",
     dest: pathDest
   },
 
   img: {
-    src: pathSrc + "/img/*.{png, jpeg, jpg, gif, svg}",
-    watch: pathSrc + "/img/*.{png, jpeg, jpg, gif, svg}",
+    src: pathSrc + "/img/**/*.{png, jpeg, jpg, gif, svg}",
+    watch: pathSrc + "/img/**/*.{png, jpeg, jpg, gif, svg}",
     dest: pathDest + "/img"
   },
 
