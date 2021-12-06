@@ -28,4 +28,22 @@ module.exports = {
     watch: pathSrc + "/scss/*.{sass,scss}",
     dest: pathDest
   },
+
+  js: {
+    src: pathSrc + "/js/*.js",
+    watch: pathSrc + "/js/*.js",
+    dest: pathDest
+  },
+
+  img: {
+    src: pathSrc + "/img/*.{png, jpeg, jpg, gif, svg}",
+    watch: pathSrc + "/img/*.{png, jpeg, jpg, gif, svg}",
+    dest: pathDest + "/img"
+  },
+
+  fonts: {
+    src: pathSrc + "/fonts/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
+    watch: pathSrc + "/fonts/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
+    dest: pathDest + "/fonts"
+  },
 }
