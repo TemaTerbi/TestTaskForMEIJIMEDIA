@@ -1,9 +1,32 @@
 {
-  "dependencies": {
-    "gulp": "4.0.2",
-    "bootstrap": "4.4.1",
-    "bootstrap-gulp": "3.1.5-beta",
-    "magnific-popup": "1.1.0",
-    "roboto-fontface-pre-css": "0.0.3"
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "TestTask for MEIJIMEDIA",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TemaTerbi/TestTaskForMEIJIMEDIA.git"
+  },
+  "author": "Artem Solovev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TemaTerbi/TestTaskForMEIJIMEDIA/issues"
+  },
+  "homepage": "https://github.com/TemaTerbi/TestTaskForMEIJIMEDIA#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.44.0"
   }
 }
