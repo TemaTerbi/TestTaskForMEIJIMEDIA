@@ -22,7 +22,6 @@ button {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #77B900;
-  transition: 0.2s;
 }
 button:hover {
   background-color: #000000;
@@ -46,6 +45,10 @@ body {
   background-position: right fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+input {
+  outline: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -414,6 +417,9 @@ template {
   letter-spacing: 0.3px;
   margin-left: 38px;
 }
+.header-nav__item:hover {
+  color: #77B900;
+}
 .header-social {
   display: flex;
 }
@@ -484,6 +490,15 @@ section {
   width: 255px;
   margin-right: 30px;
 }
+.items-item__svg {
+  stroke: #FFFFFF;
+  transition: 0.3s;
+}
+.items-item__svg:hover {
+  fill: rgba(119, 185, 0, 0.25);
+  stroke: #77B900;
+  transition: 0.3s;
+}
 .items-item__head {
   font-family: PlayBold;
   font-weight: bold;
@@ -501,4 +516,135 @@ section {
 
 .green {
   color: #77B900;
+}
+
+@media (max-width: 1024px) {
+  .items-item {
+    width: 200px;
+  }
+  .items-item__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .items-item {
+    width: 300px;
+    margin-right: 0;
+  }
+  .items-item__text {
+    text-align: center;
+  }
+  .items-item__head {
+    text-align: center;
+    margin-top: 0;
+    mb: 0;
+  }
+
+  .header {
+    padding: 15px 0px 15px 0px;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .header-social {
+    margin-left: 10px;
+  }
+
+  body {
+    background-repeat: repeat;
+  }
+
+  header {
+    width: 768px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    display: none;
+  }
+
+  header {
+    width: 425px;
+  }
+
+  body {
+    background-size: 425px;
+  }
+}
+.modal {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  left: 36%;
+  top: 22%;
+  width: 540px;
+  height: 410px;
+  background-color: #000000;
+  box-shadow: inset 0px 0px 0px 0px green, 0px 0px 5px 2px #77B900;
+}
+.modal-close {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+  margin-right: 12px;
+  cursor: pointer;
+  stroke: white;
+}
+.modal-close:hover {
+  stroke: #77B900;
+}
+.modal-Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 41px;
+}
+.modal-form__head {
+  font-family: PlayBold;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.modal-form__input {
+  font-family: Roboto;
+  font-size: 16px;
+  padding: 14px 20px 14px 20px;
+  border: none;
+  margin-bottom: 20px;
+  width: 290px;
+  height: 30px;
+}
+.modal-form__input::placeholder {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #000000;
+}
+.modal-form__btn {
+  font-family: PlayBold;
+}
+
+.fade {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.vis {
+  visibility: visible;
 }

@@ -1,4 +1,11 @@
 mixin button(name='Купить')
+  .buttons(id="btn", onclick="openModal()")
+    .buttons-btn 
+      button=name
+  script 
+    include ../../js/module/openModal.js
+
+mixin button2(name='Купить')
   .buttons
     .buttons-btn 
       button=name

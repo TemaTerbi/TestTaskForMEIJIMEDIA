@@ -1,0 +1,62 @@
+.modal
+  visibility: hidden
+  position: absolute
+  z-index: 1
+  left: 36%
+  top: 22%
+  width: 540px
+  height: 410px
+  background-color: $black
+  box-shadow: inset 0px 0px 0px 0px green, 0px 0px 5px 2px $green
+  &-close
+    display: flex
+    justify-content: flex-end
+    margin-top: 12px
+    margin-right: 12px
+    cursor: pointer
+    stroke: white
+    &:hover
+      stroke: $green
+  &-Wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-form
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 41px
+    &__head
+      font-family: PlayBold
+      font-weight: 700
+      font-size: 26px
+      margin-bottom: 20px
+      color: $white
+    &__input
+      font-family: Roboto
+      font-size: 16px
+      padding: 14px 20px 14px 20px
+      border: none
+      margin-bottom: 20px
+      width: 290px
+      height: 30px
+      &::placeholder
+        font-family: Roboto
+        font-size: 16px
+        color: $black
+    &__btn
+      font-family: PlayBold
+
+.fade
+  visibility: hidden
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  background-color: $black
+  opacity: 0.9
+  z-index: 1
+
+.vis
+  visibility: visible

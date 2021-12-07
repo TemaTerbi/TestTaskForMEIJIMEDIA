@@ -16,7 +16,17 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _module_sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module/sum */ \"./source/js/module/sum.js\");\n/* harmony import */ var _module_sum__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_module_sum__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack://testtask/./source/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _module_sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module/sum */ \"./source/js/module/sum.js\");\n/* harmony import */ var _module_sum__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_module_sum__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _module_openModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./module/openModal */ \"./source/js/module/openModal.js\");\n/* harmony import */ var _module_openModal__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_module_openModal__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack://testtask/./source/js/main.js?");
+
+/***/ }),
+
+/***/ "./source/js/module/openModal.js":
+/*!***************************************!*\
+  !*** ./source/js/module/openModal.js ***!
+  \***************************************/
+/***/ (() => {
+
+eval("function openModal() {\r\n  document.getElementById('btn')\r\n  document.getElementById('modal').classList.toggle('vis')\r\n  document.getElementById('fade').classList.toggle('vis')\r\n}\r\n\r\nfunction closeModal() {\r\n  document.getElementById('close')\r\n  close()\r\n  function close() {\r\n    document.getElementById('fade').classList.toggle('vis')\r\n    document.getElementById('modal').classList.toggle('vis')\r\n  }\r\n}\n\n//# sourceURL=webpack://testtask/./source/js/module/openModal.js?");
 
 /***/ }),
 

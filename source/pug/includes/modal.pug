@@ -1,0 +1,16 @@
+include ../utils/buttons
+.fade(id="fade")
+.modal(id="modal")
+  .modal-close(id="close", onclick="closeModal()")
+    svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+      path(d="M18 2L2 18"  stroke-width="2" stroke-linecap="round")
+      path(d="M2 2L18 18"  stroke-width="2" stroke-linecap="round")
+  .modal-form 
+    .modal-form__head ПРЕИМУЩЕСТВА G-SYNC
+    .modal-Wrapper 
+      input(type="text", placeholder="Имя", class="modal-form__input")
+      input(type="Email", placeholder="Email", class="modal-form__input")
+      .modal-form__btn
+        +button2
+script 
+    include ../../js/module/openModal.js
