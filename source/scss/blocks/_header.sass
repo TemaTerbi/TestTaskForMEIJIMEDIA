@@ -4,11 +4,28 @@
   justify-content: space-between
   padding: 15px 165px 15px 165px
   margin: auto
+  &-menu
+    display: none
+    margin-left: 265px
   &-wrapper
     display: flex
     align-items: center
   &-nav
     display: flex
+    color: $white
+    justify-content: space-between
+    width: 390px
+    text-transform: uppercase
+    font-family: Roboto
+    font-size: 16px
+    line-height: 28px
+    letter-spacing: 0.3px
+    margin-left: 38px
+    &__item
+      &:hover
+        color: $green
+  &-nav2
+    display: none
     color: $white
     justify-content: space-between
     width: 390px
@@ -38,6 +55,31 @@
       &:hover
         fill: $green
         transition: 0.3s
+  &-social2
+    display: flex
+    &__twit
+      margin-right: 33px
+      fill: $gray
+      transition: 0.4s
+      cursor: pointer
+      &:hover
+        fill: $green
+        transition: 0.3s
+    &__inst
+      fill: $gray
+      transition: 0.4s
+      cursor: pointer
+      &:hover
+        fill: $green
+        transition: 0.3s
+.menu
+  position: absolute
+  background-color: $black
+  z-index: 1
+  left: 0
+  top: 80px
+  width: 425px
+  height: 550px
 header
   height: 90px
   width: 100%

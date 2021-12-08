@@ -1,0 +1,64 @@
+@media (max-width: 1024px)
+  .items
+    &-item
+      width: 200px
+      &__text
+        font-size: 16px
+
+@media (max-width: 768px)
+  .items
+    flex-wrap: wrap
+    justify-content: center
+    &-item
+      width: 300px
+      margin-right: 0
+      &__text
+        display: flex
+        justify-content: center
+      &__head
+        display: flex
+        justify-content: center
+  .header
+    padding: 15px 0px 15px 0px
+    justify-content: center
+    overflow: hidden
+    &-social
+      margin-left: 10px
+  .modal
+    left: 120px
+  body
+    background-repeat: repeat
+  header
+    width: 768px
+    overflow: hidden
+
+@media (max-width: 425px)
+  .header
+    justify-content: left
+    &-menu
+      display: block
+    &-nav
+      display: none
+      &__item
+        margin-bottom: 30px
+        margin-top: 10px
+    &-nav2
+      margin-left: 0
+      width: 425px
+      display: flex
+      flex-direction: column
+    &-social
+      display: none
+    &-social2
+      display: flex
+      justify-content: center
+      margin-top: 291px
+    &-logo
+      left: 0
+      margin-left: 15px
+  .modal
+    width: 350px
+    left: 45px
+
+  header
+    width: 425px

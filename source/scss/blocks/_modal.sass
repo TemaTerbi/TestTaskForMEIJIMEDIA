@@ -1,5 +1,5 @@
 .modal
-  visibility: hidden
+  display: none
   position: absolute
   z-index: 1
   left: 36%
@@ -15,8 +15,10 @@
     margin-right: 12px
     cursor: pointer
     stroke: white
+    transition: 0.2s
     &:hover
       stroke: $green
+      transition: 0.2s
   &-Wrapper
     display: flex
     flex-direction: column
@@ -48,7 +50,7 @@
       font-family: PlayBold
 
 .fade
-  visibility: hidden
+  display: none
   position: absolute
   top: 0
   left: 0
@@ -59,4 +61,4 @@
   z-index: 1
 
 .vis
-  visibility: visible
+  display: block
