@@ -770,6 +770,17 @@ section {
   header {
     width: 375px;
   }
+
+  .modal {
+    width: 300px;
+    left: 45px;
+  }
+  .modal-form__input {
+    width: 150px;
+  }
+  .modal-form__head {
+    font-size: 20px;
+  }
 }
 @media (max-width: 320px) {
   header {
@@ -784,5 +795,10 @@ section {
   }
   .header-social2 {
     width: 320px;
+  }
+
+  .modal {
+    width: 280px;
+    left: 23px;
   }
 }
