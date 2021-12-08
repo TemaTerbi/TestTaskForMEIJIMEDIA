@@ -403,8 +403,10 @@ template {
   margin: auto;
 }
 .header-menu {
+  cursor: pointer;
   display: none;
   margin-left: 265px;
+  fill: #000000;
 }
 .header-wrapper {
   display: flex;
@@ -463,7 +465,7 @@ template {
   transition: 0.3s;
 }
 .header-social2 {
-  display: flex;
+  display: none;
 }
 .header-social2__twit {
   margin-right: 33px;
@@ -486,6 +488,7 @@ template {
 }
 
 .menu {
+  display: none;
   position: absolute;
   background-color: #000000;
   z-index: 1;
@@ -493,6 +496,14 @@ template {
   top: 80px;
   width: 425px;
   height: 550px;
+}
+
+.menu-vis {
+  display: block;
+}
+
+.color {
+  fill: #77B900;
 }
 
 header {
@@ -568,6 +579,10 @@ section {
 
 .green {
   color: #77B900;
+}
+
+.info-hide {
+  display: none;
 }
 
 .modal {
@@ -693,6 +708,10 @@ section {
     width: 768px;
     overflow: hidden;
   }
+
+  button {
+    margin-bottom: 100px;
+  }
 }
 @media (max-width: 425px) {
   .header {
@@ -734,5 +753,36 @@ section {
 
   header {
     width: 425px;
+  }
+}
+@media (max-width: 375px) {
+  .header-menu {
+    margin-left: 224px;
+  }
+  .header-nav2 {
+    width: 375px;
+  }
+
+  .menu {
+    width: 375px;
+  }
+
+  header {
+    width: 375px;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    width: 320px;
+  }
+
+  .header-menu {
+    margin-left: 165px;
+  }
+  .header-nav2 {
+    width: 320px;
+  }
+  .header-social2 {
+    width: 320px;
   }
 }

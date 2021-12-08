@@ -5,8 +5,10 @@
   padding: 15px 165px 15px 165px
   margin: auto
   &-menu
+    cursor: pointer
     display: none
     margin-left: 265px
+    fill: $black
   &-wrapper
     display: flex
     align-items: center
@@ -56,7 +58,7 @@
         fill: $green
         transition: 0.3s
   &-social2
-    display: flex
+    display: none
     &__twit
       margin-right: 33px
       fill: $gray
@@ -73,6 +75,7 @@
         fill: $green
         transition: 0.3s
 .menu
+  display: none
   position: absolute
   background-color: $black
   z-index: 1
@@ -80,6 +83,13 @@
   top: 80px
   width: 425px
   height: 550px
+
+.menu-vis
+  display: block
+
+.color
+  fill: $green
+
 header
   height: 90px
   width: 100%

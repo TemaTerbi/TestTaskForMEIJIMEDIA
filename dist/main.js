@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \***************************************/
 /***/ (() => {
 
-eval("function openModal() {\r\n  document.getElementById('btn')\r\n  document.getElementById('modal').classList.toggle('vis')\r\n  document.getElementById('fade').classList.toggle('vis')\r\n}\r\n\r\nfunction closeModal() {\r\n  document.getElementById('close')\r\n  close()\r\n  function close() {\r\n    document.getElementById('fade').classList.toggle('vis')\r\n    document.getElementById('modal').classList.toggle('vis')\r\n  }\r\n}\n\n//# sourceURL=webpack://testtask/./source/js/module/openModal.js?");
+eval("function openModal() {\r\n  document.getElementById('btn')\r\n  document.getElementById('modal').classList.toggle('vis')\r\n  document.getElementById('fade').classList.toggle('vis')\r\n}\r\n\r\nfunction closeModal() {\r\n  document.getElementById('close')\r\n  close()\r\n  function close() {\r\n    document.getElementById('fade').classList.toggle('vis')\r\n    document.getElementById('modal').classList.toggle('vis')\r\n  }\r\n}\r\n\r\nfunction openMenu() {\r\n  document.getElementById('menu').classList.toggle('color')\r\n  document.getElementById('menuopen').classList.toggle('menu-vis')\r\n  document.getElementById('info').classList.toggle('info-hide')\r\n}\n\n//# sourceURL=webpack://testtask/./source/js/module/openModal.js?");
 
 /***/ }),
 
